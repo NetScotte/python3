@@ -1,0 +1,268 @@
+2018-06-11 14:23:22,867 [exceptions.py][line:41][ERROR][pid:5820] [WinError 145] 目录不是空的。: 'D:/deploy/entry/录单全量打包模板_目录规范/prebuild'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/clean_prebuild.py", line 36, in main
+    shutil.rmtree(target, onerror=onerror)
+  File "D:\Python36\lib\shutil.py", line 494, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Python36\lib\shutil.py", line 393, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\Python36\lib\shutil.py", line 391, in _rmtree_unsafe
+    os.rmdir(path)
+OSError: [WinError 145] 目录不是空的。: 'D:/deploy/entry/录单全量打包模板_目录规范/prebuild'
+2018-06-11 14:45:43,923 [exceptions.py][line:42][ERROR][pid:1072] module 'pathlib' has no attribute 'Paht'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/run_sqlldr.py", line 71, in main
+    click.echo(f'{pathlib.Paht(dir_path).resolve()}不存在。')
+AttributeError: module 'pathlib' has no attribute 'Paht'
+2018-06-11 14:48:15,817 [exceptions.py][line:42][ERROR][pid:5068] module 'pathlib' has no attribute 'Paht'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/run_sqlldr.py", line 71, in main
+    click.echo(f'{pathlib.Paht(dir_path).resolve()}不存在。')
+AttributeError: module 'pathlib' has no attribute 'Paht'
+2018-06-11 14:52:04,662 [exceptions.py][line:42][ERROR][pid:700] module 'pathlib' has no attribute 'Paht'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/run_sqlldr.py", line 71, in main
+    click.echo(f'{pathlib.Paht(dir_path).resolve()}不存在。')
+AttributeError: module 'pathlib' has no attribute 'Paht'
+2018-06-11 14:55:54,671 [exceptions.py][line:42][ERROR][pid:3044] module 'pathlib' has no attribute 'Paht'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/run_sqlldr.py", line 71, in main
+    click.echo(f'{pathlib.Paht(dir_path).resolve()}不存在。')
+AttributeError: module 'pathlib' has no attribute 'Paht'
+2018-06-12 14:02:09,053 [exceptions.py][line:39][ERROR][pid:1860] Command failed with (1): ['svn', '--non-interactive', '--username', 'wangjing', '--password', 'wangjing', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/gcs/branches/test1@34', '--new', 'svn://10.100.17.53/gcs/branches/test1@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E170013: Unable to connect to a repository at URL \'svn://10.100.17.53/gcs/branches/test1\'\r\nsvn: E170001: Authentication error from server: Password incorrect\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 93, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'wangjing', '--password', 'wangjing', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/gcs/branches/test1@34', '--new', 'svn://10.100.17.53/gcs/branches/test1@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E170013: Unable to connect to a repository at URL \'svn://10.100.17.53/gcs/branches/test1\'\r\nsvn: E170001: Authentication error from server: Password incorrect\r\n'
+2018-06-12 14:02:09,131 [exceptions.py][line:39][ERROR][pid:1860] Command failed with (1): ['svn', '--non-interactive', '--username', 'wangjing', '--password', 'wangjing', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/gcs/branches/test1@34', '--new', 'svn://10.100.17.53/gcs/branches/test1@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E170013: Unable to connect to a repository at URL \'svn://10.100.17.53/gcs/branches/test1\'\r\nsvn: E170001: Authentication error from server: Password incorrect\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 93, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'wangjing', '--password', 'wangjing', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/gcs/branches/test1@34', '--new', 'svn://10.100.17.53/gcs/branches/test1@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E170013: Unable to connect to a repository at URL \'svn://10.100.17.53/gcs/branches/test1\'\r\nsvn: E170001: Authentication error from server: Password incorrect\r\n'
+2018-06-12 15:29:57,491 [exceptions.py][line:39][ERROR][pid:5104] Command failed with (1): ['svn', '--non-interactive', '--username', 'channel', '--password', 'channel0309', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/channel/test_trunk@90', '--new', 'svn://10.100.17.53/channel/test_trunk@153', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/channel/test_trunk\' was not found in the repository at revisions \'90\' and \'153\'\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 93, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'channel', '--password', 'channel0309', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/channel/test_trunk@90', '--new', 'svn://10.100.17.53/channel/test_trunk@153', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/channel/test_trunk\' was not found in the repository at revisions \'90\' and \'153\'\r\n'
+2018-06-12 15:35:10,787 [exceptions.py][line:39][ERROR][pid:3480] Command failed with (1): ['svn', '--non-interactive', '--username', 'channel', '--password', 'channel0309', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/channel/test_trunk@65', '--new', 'svn://10.100.17.53/channel/test_trunk@149', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/channel/test_trunk\' was not found in the repository at revisions \'65\' and \'149\'\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 93, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'channel', '--password', 'channel0309', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/channel/test_trunk@65', '--new', 'svn://10.100.17.53/channel/test_trunk@149', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/channel/test_trunk\' was not found in the repository at revisions \'65\' and \'149\'\r\n'
+2018-06-12 15:37:16,124 [exceptions.py][line:39][ERROR][pid:4588] Command failed with (1): ['svn', '--non-interactive', '--username', 'channel', '--password', 'channel0309', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/channel/test_trunk@65', '--new', 'svn://10.100.17.53/channel/test_trunk@149', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/channel/test_trunk\' was not found in the repository at revisions \'65\' and \'149\'\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 93, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'channel', '--password', 'channel0309', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/channel/test_trunk@65', '--new', 'svn://10.100.17.53/channel/test_trunk@149', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/channel/test_trunk\' was not found in the repository at revisions \'65\' and \'149\'\r\n'
+2018-06-13 13:04:17,682 [exceptions.py][line:39][ERROR][pid:4288] Command failed with (1): ['svn', '--non-interactive', '--username', 'update_test', '--password', 'update_test', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/lis/Testtrunk@1776', '--new', 'svn://10.100.17.53/lis/Testtrunk@2069', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/lis/Testtrunk\' was not found in the repository at revisions \'1776\' and \'2069\'\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 93, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'update_test', '--password', 'update_test', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/lis/Testtrunk@1776', '--new', 'svn://10.100.17.53/lis/Testtrunk@2069', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/lis/Testtrunk\' was not found in the repository at revisions \'1776\' and \'2069\'\r\n'
+2018-06-13 13:09:44,264 [exceptions.py][line:39][ERROR][pid:4320] Command failed with (1): ['svn', '--non-interactive', '--username', 'update_test', '--password', 'update_test', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/lis/Testtrunk@1726', '--new', 'svn://10.100.17.53/lis/Testtrunk@2069', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/lis/Testtrunk\' was not found in the repository at revisions \'1726\' and \'2069\'\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 93, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'update_test', '--password', 'update_test', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/lis/Testtrunk@1726', '--new', 'svn://10.100.17.53/lis/Testtrunk@2069', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/lis/Testtrunk\' was not found in the repository at revisions \'1726\' and \'2069\'\r\n'
+2018-06-13 17:03:47,816 [exceptions.py][line:39][ERROR][pid:4508] Command failed with (1): ['svn', '--non-interactive', '--username', 'aes', '--password', 'aes0306', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/aes/test_trunk@15', '--new', 'svn://10.100.17.53/aes/test_trunk@30', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/aes/test_trunk\' was not found in the repository at revisions \'15\' and \'30\'\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 93, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'aes', '--password', 'aes0306', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/aes/test_trunk@15', '--new', 'svn://10.100.17.53/aes/test_trunk@30', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160013: Diff target \'svn://10.100.17.53/aes/test_trunk\' was not found in the repository at revisions \'15\' and \'30\'\r\n'
+2018-06-13 17:07:35,193 [exceptions.py][line:39][ERROR][pid:5116] [WinError 145] 目录不是空的。: 'D:/deploy/aes/业财增量打包模板_目录规范/prebuild\\src\\src\\main\\java\\com\\sinosoft\\aes\\base'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/clean_prebuild.py", line 36, in main
+    shutil.rmtree(target, onerror=onerror)
+  File "D:\Python36\lib\shutil.py", line 494, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Python36\lib\shutil.py", line 384, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  File "D:\Python36\lib\shutil.py", line 384, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  File "D:\Python36\lib\shutil.py", line 384, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  [Previous line repeated 4 more times]
+  File "D:\Python36\lib\shutil.py", line 393, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\Python36\lib\shutil.py", line 391, in _rmtree_unsafe
+    os.rmdir(path)
+OSError: [WinError 145] 目录不是空的。: 'D:/deploy/aes/业财增量打包模板_目录规范/prebuild\\src\\src\\main\\java\\com\\sinosoft\\aes\\base'
+2018-06-14 11:54:01,127 [exceptions.py][line:43][ERROR][pid:2648] [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:/deploy/elife/新电商后端全量打包模板_目录规范/prebuild\\elife-apps\\elife-a903\\src\\main\\java\\elife\\a903\\controller'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/clean_prebuild.py", line 36, in main
+    shutil.rmtree(target, onerror=onerror)
+  File "D:\Python36\lib\shutil.py", line 494, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Python36\lib\shutil.py", line 384, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  File "D:\Python36\lib\shutil.py", line 384, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  File "D:\Python36\lib\shutil.py", line 384, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  [Previous line repeated 4 more times]
+  File "D:\Python36\lib\shutil.py", line 393, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\Python36\lib\shutil.py", line 391, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:/deploy/elife/新电商后端全量打包模板_目录规范/prebuild\\elife-apps\\elife-a903\\src\\main\\java\\elife\\a903\\controller'
+2018-06-15 10:43:47,038 [exceptions.py][line:43][ERROR][pid:3312] svn: E205000: Try 'svn help import' for more information
+svn: E205000: Invalid URL '20180623/个险核心系统2018615_103307.zip'
+NoneType: None
+2018-06-15 14:51:36,463 [exceptions.py][line:43][ERROR][pid:3900] svn: E205000: Try 'svn help import' for more information
+svn: E205000: Invalid URL '20180623/业财系统2018615_144546.zip'
+NoneType: None
+2018-06-15 15:39:27,968 [exceptions.py][line:40][ERROR][pid:612] svn: E170013: Unable to connect to a repository at URL 'svn://10.100.17.53/lis/scm_lib_test/lis_prd.jar'
+svn: E170001: Authentication error from server: Password incorrect
+NoneType: None
+2018-06-15 15:39:27,968 [exceptions.py][line:40][ERROR][pid:612] svn: E170013: Unable to connect to a repository at URL 'svn://10.100.17.53/lis/scm_lib_test/lis_prd.jar'
+svn: E170001: Authentication error from server: Password incorrect
+NoneType: None
+2018-06-15 15:39:31,036 [exceptions.py][line:40][ERROR][pid:944] svn: E170013: Unable to connect to a repository at URL 'svn://10.100.17.53/lis/scm_lib_test/lis_prd.jar'
+svn: E170001: Authentication error from server: Password incorrect
+NoneType: None
+2018-06-15 15:39:31,036 [exceptions.py][line:40][ERROR][pid:944] svn: E170013: Unable to connect to a repository at URL 'svn://10.100.17.53/lis/scm_lib_test/lis_prd.jar'
+svn: E170001: Authentication error from server: Password incorrect
+NoneType: None
+2018-06-15 15:46:01,823 [exceptions.py][line:43][ERROR][pid:1964] Command failed with (1): ['svn', '--non-interactive', '--username', 'update_test', '--password', 'update_test', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/lis/Testtrunk@3309', '--new', 'svn://10.100.17.53/lis/Testtrunk@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160006: No such revision 3309\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 109, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'update_test', '--password', 'update_test', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/lis/Testtrunk@3309', '--new', 'svn://10.100.17.53/lis/Testtrunk@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160006: No such revision 3309\r\n'
+2018-06-19 10:50:32,482 [exceptions.py][line:43][ERROR][pid:2620] Command failed with (1): ['svn', '--non-interactive', '--username', 'update_test', '--password', 'update_test', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/lis/Testtrunk@3309', '--new', 'svn://10.100.17.53/lis/Testtrunk@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160006: No such revision 3309\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 109, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'update_test', '--password', 'update_test', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/lis/Testtrunk@3309', '--new', 'svn://10.100.17.53/lis/Testtrunk@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160006: No such revision 3309\r\n'
+2018-06-19 23:36:17,306 [exceptions.py][line:44][ERROR][pid:2924] [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:/deploy/elife/新电商后端全量打包模板_目录规范/prebuild'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/clean_prebuild.py", line 36, in main
+    shutil.rmtree(target, onerror=onerror)
+  File "D:\Python36\lib\shutil.py", line 494, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Python36\lib\shutil.py", line 393, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\Python36\lib\shutil.py", line 391, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:/deploy/elife/新电商后端全量打包模板_目录规范/prebuild'
+2018-06-19 23:53:58,768 [exceptions.py][line:44][ERROR][pid:5004] [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:/deploy/elife/新电商后端全量打包模板_目录规范/prebuild'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/clean_prebuild.py", line 36, in main
+    shutil.rmtree(target, onerror=onerror)
+  File "D:\Python36\lib\shutil.py", line 494, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Python36\lib\shutil.py", line 393, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\Python36\lib\shutil.py", line 391, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:/deploy/elife/新电商后端全量打包模板_目录规范/prebuild'
+2018-06-20 22:58:14,103 [exceptions.py][line:41][ERROR][pid:608] Command failed with (1): ['svn', '--non-interactive', '--username', 'kernel', '--password', 'kernel', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/kernel/testtrunk@336', '--new', 'svn://10.100.17.53/kernel/testtrunk@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160006: No such revision 336\r\n'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/svn_delta_checkout.py", line 109, in main
+    diff_list = remote_client.diff_summary(start_revision, end_revision)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 433, in diff_summary
+    do_combine=True)
+  File "D:\Python36\lib\site-packages\svn\common.py", line 54, in run_command
+    return self.external_command(cmd, environment=self.__env, **kwargs)
+  File "D:\Python36\lib\site-packages\svn\common_base.py", line 34, in external_command
+    p.returncode, cmd, stdout))
+svn.exception.SvnException: Command failed with (1): ['svn', '--non-interactive', '--username', 'kernel', '--password', 'kernel', '--no-auth-cache', 'diff', '--old', 'svn://10.100.17.53/kernel/testtrunk@336', '--new', 'svn://10.100.17.53/kernel/testtrunk@HEAD', '--summarize', '--xml']
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<diff>\r\n<paths>\r\nsvn: E160006: No such revision 336\r\n'
+2018-06-21 00:19:50,549 [exceptions.py][line:44][ERROR][pid:3564] [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:/deploy/uwca/两核增量打包模板_目录规范/prebuild\\src\\main\\java\\com\\sinosoft\\uwca\\bo\\datainterfaces'
+Traceback (most recent call last):
+  File "D:/shepherd_kala/scripts/python3/clean_prebuild.py", line 36, in main
+    shutil.rmtree(target, onerror=onerror)
+  File "D:\Python36\lib\shutil.py", line 494, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Python36\lib\shutil.py", line 384, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  File "D:\Python36\lib\shutil.py", line 384, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  File "D:\Python36\lib\shutil.py", line 384, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  [Previous line repeated 4 more times]
+  File "D:\Python36\lib\shutil.py", line 393, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\Python36\lib\shutil.py", line 391, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:/deploy/uwca/两核增量打包模板_目录规范/prebuild\\src\\main\\java\\com\\sinosoft\\uwca\\bo\\datainterfaces'

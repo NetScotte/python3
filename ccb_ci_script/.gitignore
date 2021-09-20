@@ -1,0 +1,9 @@
+*.tmp
+bats/
+/docker.iml
+/.idea/
+*env*
+.vscode
+*logs
+ccb
+__pycache__

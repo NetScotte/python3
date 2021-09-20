@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+click = "*"
+chardet = "*"
+prettytable = "*"
+svn = "*"
+rarfile = "*"
+paramiko = "*"
+requests = "*"
+
+[dev-packages]
+yapf = "*"
+"flake8" = "*"
+rope = "*"
+ipython = "*"
+bpython = "*"
+faker = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+sphinx-autobuild = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.6"
